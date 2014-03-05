@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aleph7/AIDefer.png)](https://travis-ci.org/aleph7/AIDefer)
+
 AIDefer is a code execution deferring system inspired on [Go](http://golang.org)'s [defer](http://golang.org/doc/effective_go.html#defer) statement.
 
 
