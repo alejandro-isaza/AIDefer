@@ -27,6 +27,15 @@
 
 @end
 
+/**
+ Defer a block execution until the end of the current scope, or the next loop
+ of the autorelease pool.
+ 
+ @param block The block of code to defer.
+ @return An instance of AIDefer. The block will be called when this instance is
+         deallocated so avoid keeping a strong reference. Just let ARC do it's
+         job: ignore the return value.
+ */
 static inline AIDefer* defer(void (^block)()) {
     return [AIDefer defer:block];
 }
