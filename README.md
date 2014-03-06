@@ -1,11 +1,11 @@
-[![Build Status](https://travis-ci.org/aleph7/AIDefer.png)](https://travis-ci.org/aleph7/AIDefer)
-
 AIDefer is a code execution deferring system inspired on [Go](http://golang.org)'s [defer](http://golang.org/doc/effective_go.html#defer) statement.
+
+[![Build Status](https://travis-ci.org/aleph7/AIDefer.png)](https://travis-ci.org/aleph7/AIDefer)
 
 
 ## Usage
 
-Use `defer` to postpone the execution of a block. This is useful when dealing with resources that need to be released at a later point. Here is an example using locks:
+Use `defer` to postpone the execution of a block. This is useful when dealing with resources that needs to be released at a later point. Here is an example using locks:
 
 ```objc
 - (Person*)personAtIndex:(NSUInteger)index {
