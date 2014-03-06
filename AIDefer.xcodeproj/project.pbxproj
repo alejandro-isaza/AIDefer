@@ -20,6 +20,7 @@
 		611BC5B518C7DFA900F5665F /* AIDeferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 611BC5B418C7DFA900F5665F /* AIDeferTests.m */; };
 		618A370518C7E22B000B9D3D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 618A370118C7E22B000B9D3D /* LICENSE */; };
 		618A370618C7E22B000B9D3D /* AIDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A370218C7E22B000B9D3D /* AIDefer.m */; };
+		618A370718C7F7BE000B9D3D /* AIDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A370218C7E22B000B9D3D /* AIDefer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618A370718C7F7BE000B9D3D /* AIDefer.m in Sources */,
 				611BC5B518C7DFA900F5665F /* AIDeferTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +428,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AIDefer/AIDefer-Prefix.pch";
 				INFOPLIST_FILE = "AIDeferTests/AIDeferTests-Info.plist";
+				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
