@@ -19,8 +19,8 @@
 		611BC5B318C7DFA900F5665F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 611BC5B118C7DFA900F5665F /* InfoPlist.strings */; };
 		611BC5B518C7DFA900F5665F /* AIDeferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 611BC5B418C7DFA900F5665F /* AIDeferTests.m */; };
 		618A370518C7E22B000B9D3D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 618A370118C7E22B000B9D3D /* LICENSE */; };
-		618A370618C7E22B000B9D3D /* AIDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A370218C7E22B000B9D3D /* AIDefer.m */; };
-		618A370718C7F7BE000B9D3D /* AIDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A370218C7E22B000B9D3D /* AIDefer.m */; };
+		618A370618C7E22B000B9D3D /* AIDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A370218C7E22B000B9D3D /* AIDefer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		618A370718C7F7BE000B9D3D /* AIDefer.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A370218C7E22B000B9D3D /* AIDefer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AI;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				TargetAttributes = {
 					611BC5A618C7DFA900F5665F = {
 						TestTargetID = 611BC58B18C7DFA900F5665F;
@@ -296,7 +296,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -336,7 +335,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -395,7 +393,6 @@
 		611BC5BC18C7DFA900F5665F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AIDefer.app/AIDefer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -418,7 +415,6 @@
 		611BC5BD18C7DFA900F5665F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AIDefer.app/AIDefer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

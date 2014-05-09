@@ -25,12 +25,19 @@
 + (instancetype)defer:(void (^)())block {
     AIDefer* defer =  [[AIDefer alloc] init];
     defer.block = block;
-    return defer;
+    return [defer autorelease];
 }
 
 - (void)dealloc {
     if (_block)
         _block();
+    [super dealloc];
 }
 
 @end
+
+void defer(void (^block)()) {
+    // Fool the compiler into not releasing the AIDefer object immediately
+    static AIDefer* __weak d;
+    d = [AIDefer defer:block];
+}
