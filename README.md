@@ -26,5 +26,5 @@ The lock is aquired at the start of the method and the unlock is postponed until
 To use in your project simply copy the `AIDefer.h` and `AIDefer.m` files into your project. If you are using [CocoaPods](http://cocoapods.org) add this to your Podfile:
 
 ```ruby
-pod "AIDefer", "~> 1.0"
+pod "AIDefer", "~> 1.0.2"
 ```
