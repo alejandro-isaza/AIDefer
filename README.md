@@ -1,4 +1,4 @@
-AIDefer is a code execution deferring system inspired on [Go](http://golang.org)'s [defer](http://golang.org/doc/effective_go.html#defer) statement.
+AIDefer is a code execution deferring system inspired on [Go](http://golang.org)'s [defer](http://golang.org/doc/effective_go.html#defer) statement. As an alternative you may want to consider using [libextobjc](https://github.com/jspahrsummers/libextobjc)'s [@onExit](https://github.com/jspahrsummers/libextobjc/blob/master/extobjc/EXTScope.h#L31)
 
 [![Build Status](https://travis-ci.org/aleph7/AIDefer.png)](https://travis-ci.org/aleph7/AIDefer)
 
