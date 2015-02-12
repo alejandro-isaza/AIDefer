@@ -18,7 +18,7 @@ Use `defer` to postpone the execution of a block. This is useful when dealing wi
 }
 ```
 
-The lock is aquired at the start of the method and the unlock is postponed until the method returns. See [the blog post](http://www.a-coding.com/2014/03/defer-in-objective-c.html) for more information.
+The lock is aquired at the start of the method and the unlock is postponed until the method returns. See [the blog post](http://a-coding.com/defer-in-objective-c/) for more information.
 
 
 ## Installation
